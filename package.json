@@ -1,0 +1,21 @@
+{
+  "name": "heartbit-frame-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "frog dev",
+    "serve": "tsx src/index.tsx"
+  },
+  "dependencies": {
+    "@fileverse/heartbit-core": "^2.1.0",
+    "@hono/node-server": "^1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "frog": "latest",
+    "hono": "^4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^3.12.2"
+  }
+}
