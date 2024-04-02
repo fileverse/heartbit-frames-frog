@@ -10,7 +10,8 @@ import {
   updateState,
   convertToSecondsOrMinutes,
 } from "../utils";
-import { HeartBitCore } from "@fileverse/heartbit-core";
+import { HeartBitCore, SupportedChain } from "@fileverse/heartbit-core";
+
 export const getFrame = async (context: FrameContext) => {
   const { deriveState, buttonValue } = context;
   const state = deriveState((prevState) =>
@@ -33,8 +34,9 @@ export const getFrame = async (context: FrameContext) => {
 
   if (state.frameState === FrameState.completed) {
     const { endTimeMillis, startTimeMillis } = state;
+
     const coreSdk = new HeartBitCore({
-      chain: "0xaa36a7",
+      chain: process.env.NETWORK as SupportedChain,
     });
     await coreSdk.unSignedMintHeartBit({
       account: ethAddress,

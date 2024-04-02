@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { FrameContext, Frog } from "frog";
@@ -6,10 +7,7 @@ import { getFrame } from "./components";
 import { FrameState, State } from "./utils";
 import { neynar } from "frog/middlewares";
 
-type EnvBinding = {
-  NETWORK: string;
-};
-export const app = new Frog<{ State: State; Bindings: EnvBinding }>({
+export const app = new Frog<{ State: State }>({
   // Supply a Hub to enable frame verification.
   initialState: {
     startTimeMillis: 0,
