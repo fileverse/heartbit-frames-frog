@@ -4,9 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "frog dev",
-    "build": "frog vercel-build",
-    "deploy": "vercel",
-    "serve": "tsx src/index.tsx"
+    "serve": "tsx src/index.tsx",
+    "start": "tsx src/index.tsx"
   },
   "dependencies": {
     "@fileverse/heartbit-core": "^2.1.0",
