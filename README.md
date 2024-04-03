@@ -1,7 +1,7 @@
 # HeartBit Frames
 
 ## Introduction
-This document provides a minimal example for integrating frames using the [HeartBitSDK](https://github.com/fileverse/HeartBitSDK).
+This repo provides a minimal example for integrating frames using the [HeartBitSDK](https://github.com/fileverse/HeartBitSDK).
 
 ## Getting Started
 
