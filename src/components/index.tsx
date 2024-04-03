@@ -81,6 +81,10 @@ const getResultFrame = (state: State) => {
   const elapsedTime = Math.floor((endTimeMillis - startTimeMillis) / 1000);
   return {
     image: <ResultFrameImage timeSpent={elapsedTime} />,
-    intents: [],
+    intents: [
+      <Button.Link href="https://warpcast.com/fileverse">
+        Follow Fileverse
+      </Button.Link>,
+    ],
   };
 };
