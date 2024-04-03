@@ -1,7 +1,9 @@
 # HeartBit Frames
 
 ## Introduction
-This repo provides a minimal example for integrating frames with the [HeartBitSDK](https://github.com/fileverse/HeartBitSDK).
+This repo is designed to help you take advantage of crypto native distribution channels and social media. It breaks down the requirements for deploying Farcaster Frames and/or Lens OpenActions with HeartBit to improve user experience. 
+
+Using this HeartBit x Frame SDK you will be able to leverage Smart Accounts with several decentralized protocols, including the Safe Protocol and Pimlico with your Frame (using also Paradigm’s Frog frame framework or a Nexjs frame generator).
 
 ## Getting Started
 
