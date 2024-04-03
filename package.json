@@ -2,11 +2,13 @@
   "name": "heartbit-frame-example",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "frog dev",
-    "build": "frog vercel-build",
-    "deploy": "vercel",
-    "serve": "tsx src/index.tsx"
+    "serve": "tsx src/index.tsx",
+    "start": "node --import tsx src/index.tsx"
   },
   "dependencies": {
     "@fileverse/heartbit-core": "^2.1.0",
